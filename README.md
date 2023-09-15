@@ -19,5 +19,14 @@ x, y coordinates of pupil center predictions after 28 epochs training
 
 The accuracy reported in the BioCAS paper is not as high as the results demonstrated in this repository due to a discrepancy in the testing methodology. In the paper, a stride of 1 was maintained throughout the test set, which was not the optimal setting. It would be more appropriate to use a stride equivalent to the sequence length, especially when data augmentation should not be applied in the test set.
 
+If you find this repo helpful, please cite our paper.
+
+@article{chen20233et,
+  title={3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network},
+  author={Chen, Qinyu and Wang, Zuowen and Liu, Shih-Chii and Gao, Chang},
+  journal={arXiv preprint arXiv:2308.11771},
+  year={2023}
+}
+
 Original LPW dataset (not event-based dataset) Portal： 
 https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/gaze-based-human-computer-interaction/labelled-pupils-in-the-wild-lpw
