@@ -11,6 +11,8 @@ Run steps:
 3. run process_event.py
 4. run convlstm-et-pytorch-event.py
 
+![我的图片描述](https://github.com/qinche106/cb-convlstm-eyetracking/blob/main/eyetracking-convlstm/plot/event_plot_28.png)
+
 The accuracy reported in the BioCAS paper is not as high as the results demonstrated in this repository due to a discrepancy in the testing methodology. In the paper, a stride of 1 was maintained throughout the test set, which was not the optimal setting. It would be more appropriate to use a stride equivalent to the sequence length, especially when data augmentation should not be applied in the test set.
 
 Original LPW dataset (not event-based dataset) Portal： 
