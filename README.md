@@ -2,9 +2,6 @@
 code will be uploaded once the paper is published.
 Here is our paper: 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network, will be published at BioCAS 2023. The arxiv version portal: https://arxiv.org/pdf/2308.11771.pdf
 
-Original LPW dataset (not event-based dataset) Portal： 
-https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/gaze-based-human-computer-interaction/labelled-pupils-in-the-wild-lpw
-
 Synthetic Event-based eye tracking (SEET) dataset link:
 https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i?usp=drive_link
 
@@ -15,3 +12,6 @@ Run steps:
 4. run convlstm-et-pytorch-event.py
 
 The accuracy reported in the BioCAS paper is not as high as the results demonstrated in this repository due to a discrepancy in the testing methodology. In the paper, a stride of 1 was maintained throughout the test set, which was not the optimal setting. It would be more appropriate to use a stride equivalent to the sequence length, especially when data augmentation should not be applied in the test set.
+
+Original LPW dataset (not event-based dataset) Portal： 
+https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/gaze-based-human-computer-interaction/labelled-pupils-in-the-wild-lpw
