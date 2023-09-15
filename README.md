@@ -1,4 +1,5 @@
 # cb-convlstm-eyetracking
+This repo introduces you how to perform pupil detection using event stream from event-based cameras.
 Here is our paper: 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network, will be published at BioCAS 2023. The arxiv version portal: https://arxiv.org/pdf/2308.11771.pdf
 
 Synthetic Event-based eye tracking (SEET) dataset link:
