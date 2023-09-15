@@ -15,15 +15,19 @@ import torch.nn.functional as F
 from torch.utils.data import Dataset, DataLoader
 from thop import profile
 from scipy.ndimage import median_filter
+
 pretrained = False
 test_one =True
 height = N = 60   # input y size
 width = M = 80  # input x size
 batch_size = 16
-
+seq = 40
+stride = 1
+stride_val = 40
 chunk_size = 500
 num_epochs = 60
 # interval=int((chunk_size-seq)/stride+1)
+
 log_dir = 'log'
 if not os.path.exists(log_dir):
     os.makedirs(log_dir)
@@ -96,13 +100,6 @@ class EventDataset(Dataset):
             for i in range(len(sample)):
                 sample_resize.append(normalize_data(cv2.resize(sample[i,0], (int(width ), int(height )))))
             sample_resize = np.expand_dims(np.array(sample_resize), axis=1)
-        # file_path_rgb = self.folder_rgb[file_index]
-        # with tables.open_file(file_path_rgb, 'r') as file:
-        #     sample_rgb = file.root.vector[sample_index]
-        #     sample_rgb_resize = []
-        #     for i in range(len(sample)):
-        #         sample_rgb_resize.append(cv2.resize(sample_rgb[i,0], (int(width ), int(height ))))
-        #     sample_rgb_resize = np.expand_dims(np.array(sample_rgb_resize), axis=1)
 
         label1 = self.target[index][:, 0]/M/(8)
         label2 = self.target[index][:, 1]/N/(8)
@@ -146,9 +143,7 @@ data_val = [os.path.join(data_dir_val, f + '.h5') for f in val_filenames]
 target_val = [os.path.join(target_dir, f + '.txt') for f in val_filenames]
 
 
-seq = 40
-stride = 1
-stride_val = 40
+
 # Create datasets
 train_dataset = EventDataset(data_train, target_train, seq, stride)
 val_dataset = EventDataset(data_val, target_val, seq, stride_val)
@@ -160,10 +155,6 @@ valid_dataloader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
 valid_dataloader_plt = DataLoader(val_dataset, batch_size=batch_size, shuffle=False)
 
-# for t, data in enumerate(valid_dataloader_plt):
-#     if t ==1:
-#         break
-#     images_event, images_rgb, targets = data
 
 class MyModel(nn.Module):
     def __init__(self, height, width, input_dim):
@@ -263,12 +254,6 @@ model.to(device)
 total_params = sum(p.numel() for p in model.parameters())
 print(f"Total number of parameters: {total_params}")
 
-# input_data = torch.randn(1, 1, 1, 60, 80).to(device)
-# macs, params = profile(model, inputs = (input_data,))
-# print(f"Total number of FLOPs: {macs}")
-
-# Define loss function and optimizer
-# criterion = nn.MSELoss()
 criterion = nn.SmoothL1Loss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
@@ -293,10 +278,6 @@ best_val_loss = float('inf')  # Initialize with a large value
 # a = 1
 for epoch in range(num_epochs):
     running_loss = 0.0
-    # if epoch>3:
-    # a = min(a + 0.1, 1)
-    # prev_output = torch.zeros(batch_size, seq, 2).to(device)
-    # print(a)
     total_data = len(train_dataloader)
     for t, data in tqdm.tqdm(enumerate(train_dataloader, 0), total=total_data):
         images, targets = data

@@ -19,7 +19,7 @@ width = M = 240  # input x size
 
 chunk_size = 500
 
-def create_samples(data,sequence, stride):
+def create_samples(data, sequence, stride):
     num_samples = data.shape[0]
 
     chunk_num = num_samples // chunk_size
