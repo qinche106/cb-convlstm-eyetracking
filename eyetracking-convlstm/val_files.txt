@@ -1,2 +1,4 @@
 subj_16_vid_1
 subj_18_vid_7
+subj_8_vid_7
+subj_9_vid_16

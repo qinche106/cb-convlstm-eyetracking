@@ -14,5 +14,3 @@ subj_2_vid_4
 subj_6_vid_5
 subj_7_vid_18
 subj_8_vid_2
-subj_8_vid_7
-subj_9_vid_16
