@@ -9,8 +9,9 @@ Run steps:
 1. Download the SEET dataset, and save it in a directory. i.e. /DATA/
 2. cd eyetracking-convlstm
 3. run process_event.py
+   
    you can change the sequence length by setting the parameter *seq*  
-5. run convlstm-et-pytorch-event.py
+4. run convlstm-et-pytorch-event.py
 
 Results:
 x, y coordinates of pupil center predictions after 28 epochs training
