@@ -12,7 +12,7 @@ Run steps:
 4. run convlstm-et-pytorch-event.py
 
 Results:
-x, y coordinates predictions
+x, y coordinates of pupil center predictions after 28 epochs training
 ![我的图片描述](https://github.com/qinche106/cb-convlstm-eyetracking/blob/main/eyetracking-convlstm/plot/event_plot_28.png)
 
 The accuracy reported in the BioCAS paper is not as high as the results demonstrated in this repository due to a discrepancy in the testing methodology. In the paper, a stride of 1 was maintained throughout the test set, which was not the optimal setting. It would be more appropriate to use a stride equivalent to the sequence length, especially when data augmentation should not be applied in the test set.
