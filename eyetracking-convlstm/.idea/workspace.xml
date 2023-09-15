@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8998fd3b-590a-4243-8a54-3e11d9335be2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/eyetracking-convlstm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/eyetracking-convlstm.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/convlstm-et-pytorch-event.py" beforeDir="false" afterPath="$PROJECT_DIR$/convlstm-et-pytorch-event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/convlstm-et.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/convlstm_light.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/meanIntensity.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process_event.py" beforeDir="false" afterPath="$PROJECT_DIR$/process_event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot/event_plot_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plot/eye_plot_1.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
