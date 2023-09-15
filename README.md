@@ -2,14 +2,15 @@
 This repo introduces you how to perform pupil detection using event stream from event-based cameras.
 Here is our paper: 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network, will be published at BioCAS 2023. The arxiv version portal: https://arxiv.org/pdf/2308.11771.pdf
 
-Synthetic Event-based eye tracking (SEET) dataset link:
+Synthetic Event-based Eye Tracking (SEET) dataset link:
 https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i?usp=drive_link
 
 Run steps:
 1. Download the SEET dataset, and save it in a directory. i.e. /DATA/
 2. cd eyetracking-convlstm
 3. run process_event.py
-4. run convlstm-et-pytorch-event.py
+   you can change the sequence length by setting the parameter *seq*  
+5. run convlstm-et-pytorch-event.py
 
 Results:
 x, y coordinates of pupil center predictions after 28 epochs training
