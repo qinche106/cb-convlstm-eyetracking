@@ -1,5 +1,4 @@
 # cb-convlstm-eyetracking
-code will be uploaded once the paper is published.
 Here is our paper: 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network, will be published at BioCAS 2023. The arxiv version portal: https://arxiv.org/pdf/2308.11771.pdf
 
 Synthetic Event-based eye tracking (SEET) dataset link:
