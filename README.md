@@ -37,6 +37,8 @@ https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/rese
 
 # Loading raw 3ET with the Tonic library 💥💥💥
 
+We support using the Tonic library to automatically download the 3ET dataset and load the raw events and labels.
+
 The Tonic library is a Python library for loading and processing event-based data. It is available at [GitHub Repo](https://github.com/neuromorphs/tonic/tree/develop)
 
 To install the Tonic library branch which includes the 3ET dataset loader, run the following command:
