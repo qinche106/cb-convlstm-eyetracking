@@ -12,10 +12,10 @@ This repo introduces you to how to perform pupil detection using event stream fr
 Here is our paper: 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network, which was published at BioCAS 2023. The arxiv version: https://arxiv.org/pdf/2308.11771.pdf
 
 Synthetic Event-based Eye Tracking (SEET) dataset link (event frame):
-[https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i?usp=drive_link](https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i?usp=sharing)
+[Google Drive](https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i?usp=sharing)
 
 Synthetic Event-based Eye Tracking (SEET) dataset link (event raw data and .avi video files):
-[https://drive.google.com/drive/folders/1HeOS5YBLruzHjwMKyBQfVTc_mJbsy_R1?usp=drive_link](https://drive.google.com/drive/folders/1HeOS5YBLruzHjwMKyBQfVTc_mJbsy_R1?usp=sharing)
+[Google Drive](https://drive.google.com/drive/folders/1HeOS5YBLruzHjwMKyBQfVTc_mJbsy_R1?usp=sharing)
 
 Run steps:
 1. Download the SEET dataset, and save it in a directory. i.e. /DATA/
@@ -33,3 +33,22 @@ Results:
 
 Original LPW dataset (not event-based dataset)： 
 https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/gaze-based-human-computer-interaction/labelled-pupils-in-the-wild-lpw
+
+
+# Loading raw 3ET with the Tonic library 💥💥💥
+
+The Tonic library is a Python library for loading and processing event-based data. It is available at [GitHub Repo](https://github.com/neuromorphs/tonic/tree/develop)
+
+To install the Tonic library branch which includes the 3ET dataset loader, run the following command:
+```
+pip install tonic --pre
+```
+A minimum working example of loading the 3ET dataset is shown below:
+```
+import tonic
+
+trainset = tonic.datasets.ThreeET_Eyetracking(save_to="./data", split='Train')
+
+events, targets = next(iter(trainset))
+```
+
