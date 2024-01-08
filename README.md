@@ -1,3 +1,5 @@
+💥💥💥 Loading 3ET dataset is now available with the Tonic event datasets loader [Jump to dataloader](#tonic-dataloader)
+
 If you find this repo helpful, please cite our paper. This is the archived version and the BioCAS proceeding version will follow.
 ```
 @article{chen20233et,
@@ -34,8 +36,10 @@ Results:
 Original LPW dataset (not event-based dataset)： 
 https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning/research/gaze-based-human-computer-interaction/labelled-pupils-in-the-wild-lpw
 
-
+<a id="tonic-dataloader"></a>
 # Loading raw 3ET with the Tonic library 💥💥💥
+
+We support using the Tonic library to automatically download the 3ET dataset and load the raw events and labels.
 
 The Tonic library is a Python library for loading and processing event-based data. It is available at [GitHub Repo](https://github.com/neuromorphs/tonic/tree/develop)
 
