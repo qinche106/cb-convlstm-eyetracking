@@ -127,9 +127,9 @@ def load_filenames(path):
         return [line.strip() for line in f.readlines()]
 
 
-data_dir_train = "/DATA/pupil_st/data_ts_pro/train/"
-data_dir_val = "/DATA/pupil_st/data_ts_pro/val/"
-target_dir = "/DATA/pupil_st/label"
+data_dir_train = "./dataset/data_ts_pro/train/"
+data_dir_val = "./dataset/data_ts_pro/val/"
+target_dir = "./dataset/pupil_st/label"
 
 # Load filenames from the provided lists
 train_filenames = load_filenames('train_files.txt')
@@ -413,7 +413,7 @@ for epoch in range(num_epochs):
             for i, ax in enumerate(axs.flatten()):
                 # Plot the image
                 ax.imshow(frames_plot[i], cmap='gray')  # Displaying it in grayscale for this example
-                x, y = o_l_numpy[i] * height, o_r_numpy[i] * width
+                x, y = o_l_numpy[i] * width, o_r_numpy[i] * height
                 ax.plot(x, y, 'ro')
                 # Hide the axes
                 ax.axis('off')
@@ -422,23 +422,3 @@ for epoch in range(num_epochs):
             picname2 = f'eye_plot_{epoch}.png'
             plt.savefig(os.path.join(plot_dir, picname2))
             plt.close()
-        # image_list=[]
-        # if test_one:
-        #     for i in range(16):
-        #         image_o = cv2.imread(f'img_demo/frame_{i+2}.png', cv2.IMREAD_GRAYSCALE)
-        #         image_o = normalize_data(cv2.resize(image_o, (width, height)))
-        #         image = torch.from_numpy(image_o).float()
-        #         image_list.append(image)
-        #     image = torch.stack(image_list, dim=0).float().unsqueeze(0)
-        #     image= image.unsqueeze(2)
-        #     with torch.no_grad():  # Disable gradient calculation to save memory
-        #         prediction = model(image.to(device).float())
-        #     fig, axs = plt.subplots(4, 4, figsize=(10, 10))
-
-        #     for i, ax in enumerate(axs.flatten()):
-        #         # Plot the image
-        #         ax.imshow(image_list[i], cmap='gray')  # Displaying it in grayscale for this example
-        #         x, y = prediction[0,i,0] * width, prediction[0,i,1] * height
-        #         ax.plot(x, y, 'ro')
-        #         # Hide the axes
-        #         ax.axis('off')
