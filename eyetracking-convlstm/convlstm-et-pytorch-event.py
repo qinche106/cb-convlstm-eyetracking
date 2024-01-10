@@ -25,13 +25,18 @@ seq = 40
 stride = 1
 stride_val = 40
 chunk_size = 500
-num_epochs = 60
+num_epochs = 100
 # interval=int((chunk_size-seq)/stride+1)
 
-log_dir = 'log'
+# set random seed for reproducibality
+seed = 1
+torch.manual_seed(seed)
+np.random.seed(seed)
+
+log_dir = f'adam_l1_100ep_log_s{seed}'
 if not os.path.exists(log_dir):
     os.makedirs(log_dir)
-plot_dir = 'plot'
+plot_dir = f'adam_l1_100ep_plot_s{seed}'
 if not os.path.exists(plot_dir):
     os.makedirs(plot_dir)
 
