@@ -390,8 +390,8 @@ for epoch in range(num_epochs):
             # Plot l1 and l2 in the first subplot
             ax1.plot(t_l_numpy, label='target 1')
             ax1.plot(o_l_numpy, label='output 1')
-            ax1.set_xlabel('x')
-            ax1.set_ylabel('y')
+            ax1.set_xlabel('time')
+            ax1.set_ylabel('x')
             ax1.set_title('Plot of Line 1 and Line 2')
             ax1.set_ylim([0, 1])
             ax1.legend()
@@ -399,7 +399,7 @@ for epoch in range(num_epochs):
             # Plot l3 and l4 in the second subplot
             ax2.plot(t_r_numpy, label='target 2')
             ax2.plot(o_r_numpy, label='output 2')
-            ax2.set_xlabel('x')
+            ax2.set_xlabel('time')
             ax2.set_ylabel('y')
             ax2.set_title('Plot of Line 3 and Line 4')
             ax2.set_ylim([0, 1])
