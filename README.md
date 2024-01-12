@@ -1,7 +1,8 @@
 ![](https://github.com/qinche106/cb-convlstm-eyetracking/blob/main/eyetracking-convlstm/plot/logo1.png)
-![](https://github.com/qinche106/cb-convlstm-eyetracking/blob/main/eyetracking-convlstm/plot/neuromorphic_eye.gif)
+
 # 
 3ET is an event-based eye-tracking dataset to facilitate the download!
+![](https://github.com/qinche106/cb-convlstm-eyetracking/blob/main/eyetracking-convlstm/plot/neuromorphic_eye.gif)
 💥💥💥 Loading 3ET dataset is now available with the Tonic event datasets loader [Jump to dataloader](#tonic-dataloader)
 The Tonic data loader helps you to easily load raw events which can be further processed into your favorite event data representation including event frames.
 
