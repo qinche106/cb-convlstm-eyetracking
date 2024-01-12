@@ -17,10 +17,10 @@ If you find this repo helpful, please cite our paper. This is the archived versi
 This repo introduces you to how to perform pupil detection using event stream from event-based cameras.
 Here is our paper: 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network, which was published at BioCAS 2023. The arxiv version: https://arxiv.org/pdf/2308.11771.pdf
 
-Synthetic Event-based Eye Tracking (SEET) dataset link (event frame):
+Synthetic Event-based Eye Tracking dataset link (event frame):
 [Google Drive](https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i?usp=sharing)
 
-Synthetic Event-based Eye Tracking (SEET) dataset link (event raw data and .avi video files):
+Synthetic Event-based Eye Tracking dataset link (event raw data and .avi video files):
 [Google Drive](https://drive.google.com/drive/folders/1HeOS5YBLruzHjwMKyBQfVTc_mJbsy_R1?usp=sharing)
 
 Run steps:
