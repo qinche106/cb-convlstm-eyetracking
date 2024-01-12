@@ -1,4 +1,5 @@
 💥💥💥 Loading 3ET dataset is now available with the Tonic event datasets loader [Jump to dataloader](#tonic-dataloader)
+The Tonic data loader helps you to easily load raw events which can be further processed into your favorite event data representation including event frames.
 
 If you find this repo helpful, please cite our paper. This is the archived version and the BioCAS proceeding version will follow.
 ```
