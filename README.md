@@ -1,3 +1,5 @@
+3ET is an event-based eye-tracking dataset to facilitate the download!
+
 💥💥💥 Loading 3ET dataset is now available with the Tonic event datasets loader [Jump to dataloader](#tonic-dataloader)
 The Tonic data loader helps you to easily load raw events which can be further processed into your favorite event data representation including event frames.
 
