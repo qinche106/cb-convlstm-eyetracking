@@ -1,4 +1,10 @@
+![](https://github.com/qinche106/cb-convlstm-eyetracking/blob/main/eyetracking-convlstm/plot/logo1.png)
+
+# 
+3ET is an event-based eye-tracking dataset to facilitate the download!
+![image](https://github.com/qinche106/cb-convlstm-eyetracking/blob/main/eyetracking-convlstm/plot/neuromorphic_eye.gif)
 💥💥💥 Loading 3ET dataset is now available with the Tonic event datasets loader [Jump to dataloader](#tonic-dataloader)
+The Tonic data loader helps you to easily load raw events which can be further processed into your favorite event data representation including event frames.
 
 If you find this repo helpful, please cite our paper. This is the archived version and the BioCAS proceeding version will follow.
 ```
@@ -9,14 +15,14 @@ If you find this repo helpful, please cite our paper. This is the archived versi
   year={2023}
 }
 ```
-# cb-convlstm-eyetracking
+# 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network
 This repo introduces you to how to perform pupil detection using event stream from event-based cameras.
 Here is our paper: 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network, which was published at BioCAS 2023. The arxiv version: https://arxiv.org/pdf/2308.11771.pdf
 
-Synthetic Event-based Eye Tracking (SEET) dataset link (event frame):
+Synthetic Event-based Eye Tracking dataset link (event frame):
 [Google Drive](https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i?usp=sharing)
 
-Synthetic Event-based Eye Tracking (SEET) dataset link (event raw data and .avi video files):
+Synthetic Event-based Eye Tracking dataset link (event raw data and .avi video files):
 [Google Drive](https://drive.google.com/drive/folders/1HeOS5YBLruzHjwMKyBQfVTc_mJbsy_R1?usp=sharing)
 
 Run steps:
