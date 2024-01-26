@@ -9,12 +9,13 @@ A eye-tracking game demo developed at Telluride workshop 2023,CO, US: https://ww
 
 If you find this repo helpful, please cite our paper. This is the archived version and the BioCAS proceeding version will follow.
 ```
-@article{chen20233et,
-  title={3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network},
+@INPROCEEDINGS{3et,
   author={Chen, Qinyu and Wang, Zuowen and Liu, Shih-Chii and Gao, Chang},
-  journal={arXiv preprint arXiv:2308.11771},
-  year={2023}
-}
+  booktitle={2023 IEEE Biomedical Circuits and Systems Conference (BioCAS)}, 
+  title={3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network}, 
+  year={2023},
+  pages={1-5},
+  doi={10.1109/BioCAS58349.2023.10389062}}
 ```
 # 3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network
 This repo introduces you to how to perform pupil detection using event stream from event-based cameras.
