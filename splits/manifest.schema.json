@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/qinche106/cb-convlstm-eyetracking/blob/main/splits/manifest.schema.json",
+  "title": "SEET recording split manifest",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "split_id",
+    "status",
+    "recording_id_format",
+    "source",
+    "counts",
+    "files",
+    "integrity",
+    "paper_split_relationship"
+  ],
+  "properties": {
+    "schema_version": {"const": 1},
+    "split_id": {"type": "string", "minLength": 1},
+    "status": {
+      "enum": [
+        "recommended_legacy_benchmark",
+        "artifact_inventory",
+        "deprecated",
+        "unrecovered"
+      ]
+    },
+    "recording_id_format": {"const": "subj_<subject_id>_vid_<video_id>"},
+    "source": {
+      "type": "object",
+      "required": ["description", "observed_on"],
+      "properties": {
+        "description": {"type": "string"},
+        "url": {"type": ["string", "null"]},
+        "repository_commit": {"type": ["string", "null"]},
+        "observed_on": {"type": "string", "format": "date"}
+      },
+      "additionalProperties": true
+    },
+    "counts": {
+      "type": "object",
+      "properties": {
+        "train_recordings": {"type": ["integer", "null"], "minimum": 0},
+        "validation_recordings": {"type": ["integer", "null"], "minimum": 0},
+        "unique_recordings": {"type": ["integer", "null"], "minimum": 0},
+        "selected_recordings_reported": {"type": ["integer", "null"], "minimum": 0}
+      },
+      "additionalProperties": false
+    },
+    "files": {
+      "oneOf": [
+        {"type": "null"},
+        {
+          "type": "object",
+          "required": ["train", "validation"],
+          "properties": {
+            "train": {"$ref": "#/$defs/listFile"},
+            "validation": {"$ref": "#/$defs/listFile"}
+          },
+          "additionalProperties": false
+        }
+      ]
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "recording_disjoint_required",
+        "subject_disjoint_required",
+        "expected_recording_overlap",
+        "expected_subject_overlap"
+      ],
+      "properties": {
+        "recording_disjoint_required": {"type": ["boolean", "null"]},
+        "subject_disjoint_required": {"type": ["boolean", "null"]},
+        "expected_recording_overlap": {
+          "type": ["array", "null"],
+          "items": {"type": "string"},
+          "uniqueItems": true
+        },
+        "expected_subject_overlap": {
+          "type": ["array", "null"],
+          "items": {"type": "string", "pattern": "^[0-9]+$"},
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "paper_split_relationship": {"type": "string"},
+    "compatibility_aliases": {
+      "type": "object",
+      "additionalProperties": {"type": "string"}
+    },
+    "notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "listFile": {
+      "type": "object",
+      "required": ["path", "sha256"],
+      "properties": {
+        "path": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      },
+      "additionalProperties": false
+    }
+  }
+}

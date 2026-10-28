@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "split_id": "SEET-tonic-legacy-v0",
+  "status": "deprecated",
+  "recording_id_format": "subj_<subject_id>_vid_<video_id>",
+  "source": {
+    "description": "The historical 3ET archive downloaded by the legacy Tonic dataset loader.",
+    "url": "https://dl.dropboxusercontent.com/s/1hyer8egd8843t9/ThreeET_Eyetracking.zip?dl=0",
+    "loader_source_url": "https://github.com/neuromorphs/tonic/blob/develop/tonic/datasets/threeET_eyetracking.py",
+    "repository_commit": null,
+    "observed_on": "2026-10-28",
+    "archive_bytes": 3874426299,
+    "archive_md5": "b6c652b06fdfd85721f39e2dbe12f4e8",
+    "archive_sha256": "e0048e6c39c6b558d3880d6f62c683116ded3e91fc22920e29845108aa902a7d"
+  },
+  "counts": {
+    "train_recordings": 16,
+    "validation_recordings": 2,
+    "unique_recordings": 17
+  },
+  "files": {
+    "train": {
+      "path": "train_files.txt",
+      "sha256": "302822a2024f41d5df1fcd786e4f3b9057ce1e01610033b027f700ef00ce01e4"
+    },
+    "validation": {
+      "path": "val_files.txt",
+      "sha256": "32a21bfb5105f89568ff266e3a0e9d6aa54fb5d5aa1b56775360ac76de4d400e"
+    }
+  },
+  "integrity": {
+    "recording_disjoint_required": false,
+    "subject_disjoint_required": false,
+    "expected_recording_overlap": ["subj_18_vid_7"],
+    "expected_subject_overlap": ["18"]
+  },
+  "paper_split_relationship": "Not established and unsuitable as a benchmark split because one complete recording occurs in both train and validation.",
+  "notes": [
+    "Deprecated for model evaluation: subj_18_vid_7 is present in both partitions.",
+    "The archive fingerprint is retained so historical experiments can identify the affected artifact."
+  ]
+}
