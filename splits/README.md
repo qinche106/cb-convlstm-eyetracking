@@ -6,14 +6,15 @@ tables.
 
 | Split ID | Train / validation | Recording-disjoint? | Intended use |
 | --- | ---: | :---: | --- |
-| `SEET-public-v1` | 16 / 2 | Yes | Recommended legacy public-code benchmark |
+| `SEET-public-v1` | 16 / 2 | Yes | Official public dataset split and benchmark |
 | `SEET-eventframes-v0` | 18 / 2 | Yes | Inventory of the legacy Google Drive event-frame folders |
 | `SEET-tonic-legacy-v0` | 16 / 2 (17 unique) | **No** | Historical audit only; deprecated for evaluation |
 | `SEET-paper-2023-unrecovered` | 22 selected, membership unknown | Unknown | Paper protocol record; exact lists not recovered |
 
 ## Benchmark policy
 
-`SEET-public-v1` freezes the two list files that were already present at
+`SEET-public-v1` is the official public dataset split going forward. It freezes
+the two list files that were already present at
 `eyetracking-convlstm/train_files.txt` and
 `eyetracking-convlstm/val_files.txt`. Those root-level files remain in place as
 compatibility aliases for the training code.
@@ -27,6 +28,8 @@ The paper reports 22 selected videos and an 80/20 data allocation, but the
 exact recording IDs, allocation unit and procedure, and eye-speed selection
 calculation have not been recovered.
 `SEET-public-v1` must not be presented as the original paper split.
+This distinction does not weaken its status as the official public split; it
+only prevents unsupported claims about the historical paper experiment.
 
 ## Validation
 

@@ -11,8 +11,9 @@ ConvLSTM and Change-Based ConvLSTM networks.
 > an 80/20 data allocation. The exact 22 recording IDs, the unit and procedure
 > used for that allocation, and the eye-movement-speed calculation have not
 > been recovered. The repository's existing 16/2 lists are now frozen as
-> **`SEET-public-v1`**, a recording-disjoint public-code benchmark. It is not
-> claimed to be the original paper split.
+> **`SEET-public-v1`**, the official public dataset split for all benchmark
+> results reported from this repository going forward. It is recording-disjoint
+> and is not claimed to reconstruct the original paper split.
 
 <p align="center">
   <img src="eyetracking-convlstm/plot/neuromorphic_eye.gif" alt="Event-based eye-tracking example">
@@ -23,10 +24,10 @@ repository uses “SEET” when naming the v2e-derived synthetic data artifacts
 and their splits, so an experiment can cite an exact split rather than an
 ambiguous dataset name.
 
-## Recommended benchmark split
+## Official public dataset split
 
-Use [`SEET-public-v1`](splits/SEET-public-v1/manifest.json) for comparisons
-against the legacy public code:
+Use [`SEET-public-v1`](splits/SEET-public-v1/manifest.json) as the canonical
+train/validation split for public SEET comparisons:
 
 - 16 training recordings and 2 validation recordings;
 - no complete recording ID appears in both partitions;
@@ -34,6 +35,11 @@ against the legacy public code:
   split is recording-disjoint but **not subject-disjoint**;
 - the legacy files at `eyetracking-convlstm/train_files.txt` and
   `eyetracking-convlstm/val_files.txt` remain unchanged for compatibility.
+
+The 16/2 membership is the official public split even though it differs from
+the incomplete protocol description in the paper. Benchmark results must name
+`SEET-public-v1`; neither the 18/2 Drive folder inventory nor the historical
+Tonic manifests define the official split.
 
 All known split variants and their provenance are in the
 [`splits/`](splits/README.md) registry. Validate them with:
@@ -98,7 +104,7 @@ fix from the exact commit recorded here (the commit is also linked from the
 Tonic pull request):
 
 ```bash
-pip install "git+https://github.com/qinche106/tonic.git@e06188cba31155e425863ccfb4280b2305cd6230"
+pip install "git+https://github.com/qinche106/tonic.git@7dbd4c94eebfdf5882980c34a8c455da37848566"
 ```
 
 After an upstream release includes the new API, pin that Tonic release instead.
@@ -128,17 +134,26 @@ be used for evaluation.
 
 ## Results
 
-Published Table II values are available in machine-readable form at
-[`results/paper_table_ii.csv`](results/paper_table_ii.csv), with provenance and
-reproduction status in its metadata file. They are transcribed paper results,
-not a new run on `SEET-public-v1`, because the paper split IDs are unrecovered.
+The repository's final numeric result table must contain only measurements
+evaluated on `SEET-public-v1`. The published paper Table II is not relabeled as
+an official-split result because its exact data allocation cannot be verified.
+A schema-only template is available at
+[`results/seet_public_v1_results.template.csv`](results/seet_public_v1_results.template.csv)
+until a verified run and its provenance are added.
 
 The historical qualitative prediction plot after 28 epochs is retained below:
 
 ![Pupil-center predictions after 28 epochs](eyetracking-convlstm/plot/event_plot_28.png)
 
-See [`results/README.md`](results/README.md) for the metadata required when
-adding auditable `SEET-public-v1` results.
+See [`results/README.md`](results/README.md) for the evidence required before
+publishing the final `SEET-public-v1` table.
+
+The reproducible vanilla ConvLSTM reference runner is documented in
+[`tools/README_SEET_PUBLIC_V1.md`](tools/README_SEET_PUBLIC_V1.md). It freezes
+the current public-code training protocol, fixes the old train/eval mode and
+validation-weighting bugs, and reports the corrected `x*80,y*60` pixel metric.
+It is a new public-code benchmark, not a reconstruction of the paper's
+unrecovered experiment.
 
 ## Paper and citation
 

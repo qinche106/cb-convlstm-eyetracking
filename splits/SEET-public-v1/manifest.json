@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "split_id": "SEET-public-v1",
-  "status": "recommended_legacy_benchmark",
+  "status": "official_public_benchmark",
   "recording_id_format": "subj_<subject_id>_vid_<video_id>",
   "source": {
     "description": "The 16/2 recording lists distributed in this repository before split versioning.",
@@ -36,7 +36,7 @@
     "validation": "../../eyetracking-convlstm/val_files.txt"
   },
   "notes": [
-    "This is a frozen public-code benchmark, not a reconstruction of the paper split.",
+    "This is the official public dataset split and benchmark going forward, not a reconstruction of the paper split.",
     "Training and validation are disjoint by complete recording ID.",
     "Subject 18 occurs in both partitions with different recording IDs; subject-disjoint evaluation is not claimed."
   ]

@@ -1,7 +1,0 @@
-model,theta,p3_percent,p5_percent,p10_percent,parameters_millions,flops_millions,source_split_id,reproduction_status
-CB-ConvLSTM,0.5,88.50,96.70,99.20,0.42,9.00,SEET-paper-2023-unrecovered,reported_not_rerun
-CB-ConvLSTM,0.2,88.50,96.76,99.20,0.42,9.49,SEET-paper-2023-unrecovered,reported_not_rerun
-CB-ConvLSTM,0.1,88.70,96.90,99.13,0.42,10.22,SEET-paper-2023-unrecovered,reported_not_rerun
-CB-ConvLSTM,0,88.88,97.07,99.50,0.42,18.86,SEET-paper-2023-unrecovered,reported_not_rerun
-ConvLSTM,,88.70,97.10,99.40,0.42,42.61,SEET-paper-2023-unrecovered,reported_not_rerun
-CNN,,57.80,77.40,91.40,0.40,18.40,SEET-paper-2023-unrecovered,reported_not_rerun

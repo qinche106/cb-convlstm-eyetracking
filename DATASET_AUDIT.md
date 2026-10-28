@@ -12,7 +12,7 @@ Audit date: 2026-10-28.
 | Artifact | Observed contents | Split identity | Benchmark guidance |
 | --- | --- | --- | --- |
 | [3ET paper](https://arxiv.org/abs/2308.11771) | 22 recordings selected from LPW; 11k event frames; 80/20 data allocation | Exact recording IDs, allocation unit/procedure, and eye-speed calculation unrecovered | Cite as the paper protocol only |
-| This repository at commit `477b85e468567def676e096834e0e936598429fe` | 16 train IDs, 2 validation IDs | `SEET-public-v1` | Recommended legacy public-code benchmark |
+| This repository at commit `477b85e468567def676e096834e0e936598429fe` | 16 train IDs, 2 validation IDs | `SEET-public-v1` | Official public dataset split going forward |
 | [Google Drive event-frame artifact](https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i) | 18 train recording directories, 2 validation recording directories, 62 label text files | `SEET-eventframes-v0` | Artifact inventory; do not call it the paper split |
 | [Google Drive raw artifact](https://drive.google.com/drive/folders/1HeOS5YBLruzHjwMKyBQfVTc_mJbsy_R1) | 62 raw HDF5 files, 62 frame-time files, 51 AVI files, plus v2e metadata/output files | No train/validation split encoded | Suitable as source recordings; construct a declared split explicitly |
 | [Historical Tonic download](https://dl.dropboxusercontent.com/s/1hyer8egd8843t9/ThreeET_Eyetracking.zip?dl=0) | 62 raw event HDF5 files and 62 label files; its bundled manifests select 16 train and 2 validation entries but only 17 unique IDs | `SEET-tonic-legacy-v0` | Raw data reusable; bundled split deprecated because of exact recording leakage |

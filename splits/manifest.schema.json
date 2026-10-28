@@ -19,7 +19,7 @@
     "split_id": {"type": "string", "minLength": 1},
     "status": {
       "enum": [
-        "recommended_legacy_benchmark",
+        "official_public_benchmark",
         "artifact_inventory",
         "deprecated",
         "unrecovered"
