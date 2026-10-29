@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "split_id": "SEET-public-v1",
+  "status": "official_public_benchmark",
+  "recording_id_format": "subj_<subject_id>_vid_<video_id>",
+  "source": {
+    "description": "The 16/2 recording lists distributed in this repository before split versioning.",
+    "url": "https://github.com/qinche106/cb-convlstm-eyetracking",
+    "repository_commit": "477b85e468567def676e096834e0e936598429fe",
+    "observed_on": "2026-10-28"
+  },
+  "counts": {
+    "train_recordings": 16,
+    "validation_recordings": 2,
+    "unique_recordings": 18
+  },
+  "files": {
+    "train": {
+      "path": "train_files.txt",
+      "sha256": "d0a3e202fcd084f55bcd265aca0abfeadb33d90b8989af08fc47a27eb6aeaf50"
+    },
+    "validation": {
+      "path": "val_files.txt",
+      "sha256": "32a21bfb5105f89568ff266e3a0e9d6aa54fb5d5aa1b56775360ac76de4d400e"
+    }
+  },
+  "integrity": {
+    "recording_disjoint_required": true,
+    "subject_disjoint_required": false,
+    "expected_recording_overlap": [],
+    "expected_subject_overlap": ["18"]
+  },
+  "paper_split_relationship": "Not established. The paper reports 22 selected recordings and an 80/20 data allocation, but its exact recording IDs and allocation unit and procedure have not been recovered.",
+  "compatibility_aliases": {
+    "train": "../../eyetracking-convlstm/train_files.txt",
+    "validation": "../../eyetracking-convlstm/val_files.txt"
+  },
+  "notes": [
+    "This is the official public dataset split and benchmark going forward, not a reconstruction of the paper split.",
+    "Training and validation are disjoint by complete recording ID.",
+    "Subject 18 occurs in both partitions with different recording IDs; subject-disjoint evaluation is not claimed."
+  ]
+}

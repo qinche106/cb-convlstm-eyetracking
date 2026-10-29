@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "split_id": "SEET-eventframes-v0",
+  "status": "artifact_inventory",
+  "recording_id_format": "subj_<subject_id>_vid_<video_id>",
+  "source": {
+    "description": "Directory inventory of the legacy Google Drive preprocessed event-frame artifact.",
+    "url": "https://drive.google.com/drive/folders/16qH_wv_oVNysJARtHIUrIXbHjOygfq_i",
+    "repository_commit": null,
+    "observed_on": "2026-10-28"
+  },
+  "counts": {
+    "train_recordings": 18,
+    "validation_recordings": 2,
+    "unique_recordings": 20
+  },
+  "files": {
+    "train": {
+      "path": "train_files.txt",
+      "sha256": "35d129baa16bea50700d2e1643f6f807d40f4010f1b05e6ae595b9546a13bff9"
+    },
+    "validation": {
+      "path": "val_files.txt",
+      "sha256": "32a21bfb5105f89568ff266e3a0e9d6aa54fb5d5aa1b56775360ac76de4d400e"
+    }
+  },
+  "integrity": {
+    "recording_disjoint_required": true,
+    "subject_disjoint_required": false,
+    "expected_recording_overlap": [],
+    "expected_subject_overlap": ["18"]
+  },
+  "paper_split_relationship": "Not established. This is an inventory of a downloadable artifact, not evidence of the paper's 22-recording split.",
+  "notes": [
+    "This artifact contains the 18 SEET-public-v1 recordings plus subj_8_vid_7 and subj_9_vid_16 in train.",
+    "Google Drive folders are mutable; observed_on records the audit date."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "split_id": "SEET-paper-2023-unrecovered",
+  "status": "unrecovered",
+  "recording_id_format": "subj_<subject_id>_vid_<video_id>",
+  "source": {
+    "description": "Protocol statements in arXiv:2308.11771v1 and the BioCAS 2023 paper.",
+    "url": "https://arxiv.org/abs/2308.11771",
+    "repository_commit": null,
+    "observed_on": "2026-10-28"
+  },
+  "counts": {
+    "train_recordings": null,
+    "validation_recordings": null,
+    "unique_recordings": null,
+    "selected_recordings_reported": 22
+  },
+  "files": null,
+  "integrity": {
+    "recording_disjoint_required": null,
+    "subject_disjoint_required": null,
+    "expected_recording_overlap": null,
+    "expected_subject_overlap": null
+  },
+  "paper_split_relationship": "This manifest records only what the paper states: 22 videos selected for above-average eye-movement speed and an 80/20 data allocation. The exact IDs, speed computation, allocation unit, procedure, and membership have not been recovered.",
+  "notes": [
+    "Do not infer the missing IDs from any later public artifact.",
+    "The 16/2 and 18/2 public artifacts are documented separately and are not labeled as the paper split."
+  ]
+}
