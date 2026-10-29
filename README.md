@@ -99,9 +99,10 @@ raw v2e HDF5 files. Raw events require a separate event representation step.
 [Tonic](https://github.com/neuromorphs/tonic) can download and load event data
 for subsequent transformation into event frames or another representation:
 
-Until split versioning is available in a Tonic release, install the reviewed
-fix from the exact commit recorded here (the commit is also linked from the
-Tonic pull request):
+Split versioning is proposed upstream in
+[`neuromorphs/tonic#339`](https://github.com/neuromorphs/tonic/pull/339).
+Until that pull request is merged and included in a Tonic release, install the
+reviewed fork at the exact commit below:
 
 ```bash
 pip install "git+https://github.com/qinche106/tonic.git@7dbd4c94eebfdf5882980c34a8c455da37848566"
