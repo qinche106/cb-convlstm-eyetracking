@@ -170,17 +170,46 @@ validation-weighting bugs, and reports the corrected `x*80,y*60` pixel metric.
 It is a new public-code benchmark, not a reconstruction of the paper's
 unrecovered experiment.
 
-## Paper and citation
+## 3ET+: real-event eye-tracking dataset
+
+For experiments with real event-camera recordings, we also recommend
+**3ET+**, introduced for the AIS 2024 Event-Based Eye Tracking Challenge at
+the CVPR 2024 AI for Streaming workshop. It contains recordings from 13
+subjects, each with 2–6 sessions covering random eye movements, saccades,
+text reading, smooth pursuit, and blinks. Pupil-center and blink annotations
+are provided at 100 Hz.
+
+The [official 3ET+ challenge demo code](https://github.com/EETChallenge/challenge_demo_code)
+provides the data loader, preprocessing, baseline training, and evaluation
+pipeline, together with the
+[dataset download](https://www.kaggle.com/competitions/event-based-eye-tracking-ais2024/data).
+When using 3ET+, cite the
+[AIS 2024 Challenge Survey](https://openaccess.thecvf.com/content/CVPR2024W/AI4Streaming/html/Wang_Event-Based_Eye_Tracking._AIS_2024_Challenge_Survey_CVPRW_2024_paper.html):
+
+```bibtex
+@InProceedings{Wang_2024_CVPR,
+  author={Wang, Zuowen and Gao, Chang and Wu, Zongwei and Conde, Marcos V. and Timofte, Radu and Liu, Shih-Chii and Chen, Qinyu and Zha, Zheng-Jun and Zhai, Wei and Han, Han and Liao, Bohao and Wu, Yuliang and Wan, Zengyu and Wang, Zhong and Cao, Yang and Tan, Ganchao and Chen, Jinze and Pei, Yan Ru and Bruers, Sasskia and Crouzet, Sebastien and Mclelland, Douglas and Coenen, Oliver and Zhang, Baoheng and Gao, Yizhao and Li, Jingyuan and So, Hayden Kwok-Hay and Bich, Philippe and Boretti, Chiara and Prono, Luciano and Lica, Mircea and Dinucu-Jianu, David and Griu, Catalin and Lin, Xiaopeng and Ren, Hongwei and Cheng, Bojun and Zhang, Xinan and Vial, Valentin and Yezzi, Anthony and Tsai, James},
+  title={Event-Based Eye Tracking. AIS 2024 Challenge Survey},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  month={June},
+  year={2024},
+  pages={5810-5825}
+}
+```
+
+## 3ET paper and citation
 
 The paper was published at IEEE BioCAS 2023. The
 [arXiv version](https://arxiv.org/abs/2308.11771) is openly available.
 
 ```bibtex
-@INPROCEEDINGS{3et,
+@INPROCEEDINGS{10389062,
   author={Chen, Qinyu and Wang, Zuowen and Liu, Shih-Chii and Gao, Chang},
   booktitle={2023 IEEE Biomedical Circuits and Systems Conference (BioCAS)},
   title={3ET: Efficient Event-based Eye Tracking using a Change-Based ConvLSTM Network},
   year={2023},
+  volume={},
+  number={},
   pages={1-5},
   doi={10.1109/BioCAS58349.2023.10389062}
 }
