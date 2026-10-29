@@ -134,19 +134,33 @@ be used for evaluation.
 
 ## Results
 
-The repository's final numeric result table must contain only measurements
-evaluated on `SEET-public-v1`. The published paper Table II is not relabeled as
-an official-split result because its exact data allocation cannot be verified.
-A schema-only template is available at
-[`results/seet_public_v1_results.template.csv`](results/seet_public_v1_results.template.csv)
-until a verified run and its provenance are added.
+The first released `SEET-public-v1` reference row is a fresh 100-epoch run of
+the repository's vanilla public-code ConvLSTM. It is **not** a CB-ConvLSTM
+execution result.
+
+| Protocol | Seed | P3 | P5 | P10 | Mean error | Validation loss | Best epoch | Parameters |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `SEET-public-v1-convlstm-code-v1` | 1 | 87.500% | 98.958% | 99.688% | 1.63025 px | 0.000206204 | 83 | 416,882 |
+
+These are **validation-only, single-seed** measurements on the two official
+validation recordings (24 sequences, 960 evaluated points), not held-out test
+results or uncertainty estimates. P3/P5/P10 use the corrected `x*80,y*60`
+Euclidean pixel distance and strict `distance < threshold`. An independent
+evaluation job reproduced every primary and legacy diagnostic metric exactly.
+
+The canonical machine-readable row is
+[`results/seet_public_v1_results.csv`](results/seet_public_v1_results.csv).
+The [complete result bundle](results/SEET-public-v1-convlstm-code-v1/) includes
+the best checkpoint, full metadata, all 100 history records, and the independent
+evaluation outputs. The published paper Table II is not relabeled as an
+official-split result because its exact data allocation cannot be verified.
 
 The historical qualitative prediction plot after 28 epochs is retained below:
 
 ![Pupil-center predictions after 28 epochs](eyetracking-convlstm/plot/event_plot_28.png)
 
-See [`results/README.md`](results/README.md) for the evidence required before
-publishing the final `SEET-public-v1` table.
+See [`results/README.md`](results/README.md) for exact hashes, execution
+provenance, the independent-evaluation record, and interpretation limits.
 
 The reproducible vanilla ConvLSTM reference runner is documented in
 [`tools/README_SEET_PUBLIC_V1.md`](tools/README_SEET_PUBLIC_V1.md). It freezes

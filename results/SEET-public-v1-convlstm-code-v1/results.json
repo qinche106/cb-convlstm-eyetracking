@@ -1,0 +1,813 @@
+{
+  "checkpoint": {
+    "filename": "checkpoint_best.pt",
+    "sha256": "d5a177d4d395f481e8b36441ec9e854e8488a6f11d047393916cb40cb1b09523"
+  },
+  "completed_at_utc": "2026-10-29T11:04:15.692460Z",
+  "data": {
+    "train": {
+      "dataset_order": "lexicographic_recording_id_then_window_start",
+      "effective_partition_sha256": "84632ef45b610cdb229971f0c7fe7ebd8ea48613b85603136d726765aa9cf151",
+      "partition": "train",
+      "recording_inputs": [
+        {
+          "effective_frames_sha256": "8c3f388281684d900a18ad846e59e6d144b451bf3f8d4c5e18786e61a00d86e7",
+          "effective_labels_sha256": "ba0fd6d2068ff1505d99ebb57a60e9bdf5c947c7f9904e39093684acbfa14abb",
+          "effective_recording_sha256": "8dba5f1ebc6aed2fdd0fc46e1086574010d59b38d96d8644749734d4d843e6c0",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "95398565f84979df0495144757697e712b80f1da302eaf44e95e820e737d2aea",
+          "h5_size_bytes": 136292313,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "88230d34801699b3d3c0703dfd6d44861af9fbee3e3ebd2c88d124ad8e343aba",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_10_vid_8",
+          "relative_h5": "train/subj_10_vid_8.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "acaad676e19c5a4a9d2dcc0ba8660c8b299c35c41f20e9ab229609497d0c4b48",
+          "effective_labels_sha256": "58e46893d740906d2c283af7c38f818647498a37a3d8e8e12df06bf60ae76417",
+          "effective_recording_sha256": "51242e8facf1112ba1c4e5d89eb146722057a0981830f61d8b218ee33bc80aaa",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "1b24b5a118a48871b73a5901896e5763fd4f0c5eaa12b7a2fe5c6881fc0adc8c",
+          "h5_size_bytes": 146208579,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "44e346d042f0a471a4692c2f510dfda3003ee78789dcde49c378851a0348c695",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_12_vid_1",
+          "relative_h5": "train/subj_12_vid_1.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "440bdbb4f3b0ae9cf48be9e0e941a71077649ecc835cdc7b97a568dcdf882c18",
+          "effective_labels_sha256": "9c44dde0a7814038768a145bec97bc12b744ff83b88c4326298cb0ba8e8e6ce0",
+          "effective_recording_sha256": "b5ce712c8dc274d957519218fbd599fcb509d62fb027b8e219dda58592ee09d6",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "3798d6f6d9d3a02ecb8f5f0d8c846e3a45ed56d4671ade4862451445c57bdc32",
+          "h5_size_bytes": 124470171,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "44980f04f4e93c0ad863f2f7b051135f3c47f1b25432e643f480bcd0c91620bd",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_12_vid_2",
+          "relative_h5": "train/subj_12_vid_2.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "119c962e01e03a5ce186a87a50590213910752ff5e4b1020a4748089800f332a",
+          "effective_labels_sha256": "b59f70b2eddb2f95f62a366e40dabfe9f49489b951fb64bbac45b997c682a711",
+          "effective_recording_sha256": "64574c320ca58142e6b750095e2f414d28627119b3d3546bbb62dce22bf5cfc8",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "ff24f14c2377ee5569b1225652a6560e7c243cf9268fecf3dfb9b7869c014bb1",
+          "h5_size_bytes": 160329041,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "8b8a762f23d62b2b4167e0b05a175ded0f0beb358b2e4071e9af36720ef39279",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_12_vid_9",
+          "relative_h5": "train/subj_12_vid_9.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "8b5fbe65cb0db48496f7da5f70a5eb16d584402f3c27f6cf5227f4bcf74141b0",
+          "effective_labels_sha256": "2394ec1d509ec09c9dbdcfb266cc4373f5f0ba2b3db4e37356f8c0cb59aee7f8",
+          "effective_recording_sha256": "df6dee060093a267f21b852dcc3e65de7b665b04fbae9642ab837218880031f1",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "514cc37672e939905297939ed0cf11469b9a5107c174a9456959b0803a727183",
+          "h5_size_bytes": 202957752,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "862038e6c4cf8901e8f37d16a32afadcc6ea32769501ab6d98020887090a4aba",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_13_vid_1",
+          "relative_h5": "train/subj_13_vid_1.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "d206990323ecaa9c57674523c48b89bb1241cc1796efba8461aaf143178f618a",
+          "effective_labels_sha256": "428ab860ff644b95657f2350110edb241d9da9babbfd8fea5a257486c87ac32d",
+          "effective_recording_sha256": "9cc8b361f01296939b8b58dfff98bb518d51b1ecd09c717e0ea8eddf88f0efc4",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "dfa9b54d1e13230cc497a5e9eedfe65d9224381911d9c85af389f9aaaf009967",
+          "h5_size_bytes": 209663166,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "c23f480ce60c9bb52a68bb49c68fc427e15c037c95380c86e8518c4f276b9cad",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_13_vid_2",
+          "relative_h5": "train/subj_13_vid_2.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "c96b6aff4b3022c69315dbb76876eb457909a4f978c3a46e4df2015aaf32125c",
+          "effective_labels_sha256": "7e489844fea54c4988d2ed6354bea055992cba4d620b33f7e47e18b647a562f6",
+          "effective_recording_sha256": "8491758869052141038a9ef87114b489dc3b7acff4448d300c069e23b893fec1",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "652ced39990a05e6ca84e91b4b4f8a589013e4ea0a692064785f76984f37a5df",
+          "h5_size_bytes": 215513488,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "c113b4800c9a5d0dc90fa81a25289d143d199379d4f9e6846d2487e5014b8c6d",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_14_vid_10",
+          "relative_h5": "train/subj_14_vid_10.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "a6e8b4c02af7070daabbd203692428a591265184ea12494c10b4a848c85f1e92",
+          "effective_labels_sha256": "e811a32f36a585ca130b38ab4fea4dadbebbfc7d6ae6e70120912172358bec33",
+          "effective_recording_sha256": "9984fb6837b9152671a36d553370d5db72ad2be9b847862a06d90252e3144478",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "1c377d8a7c5a4b1cbe76912aec53672d99b759fca2892ff9bb1dac6c3f06cce2",
+          "h5_size_bytes": 142613038,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "3cd4b44fd613a5c0c3fb540a499d571b484ed2ddbc75c3c05cc19afa153797ed",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_15_vid_2",
+          "relative_h5": "train/subj_15_vid_2.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "56118ccc1bf6c1c3352188d6b4d1f203d1a2699acfda8dec29b34ba9ed8f0a80",
+          "effective_labels_sha256": "b4bd468b3a1f4e147ed354741cece831a2ebc8ef5f76a9d965ae92e1f63991eb",
+          "effective_recording_sha256": "595c4c78971d423e0506e931330bdb0973e1ecdbd33a045bef5539a65a27fe06",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "384bb8ac1c1beac50fb9a1baf0583f5910b68efb741ce46fe4d4c1c7f5f333fa",
+          "h5_size_bytes": 155585569,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "c2024a0ef39bbafabc9c326a5b46673ea5d22694dd9499a6e8c66334eb33e10a",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_18_vid_2",
+          "relative_h5": "train/subj_18_vid_2.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "15525912cf997d0093b88bff8ebedfc0442209785cc58cc2e6107c4d75e26770",
+          "effective_labels_sha256": "7611791b3a0f1f76c9bea0b53d0948f21b31f3d5c766ee1e938cb978158963a1",
+          "effective_recording_sha256": "f9de378e130fa754a7d8ad78c83a3a607eb5f47c296b97484520bfbf150a8878",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "cc8b84e1aeef1d5b74f3a4d721c3d6c2f942f8d41ac05c6645616fe504561cc7",
+          "h5_size_bytes": 210117915,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "12f60068317a341809babb7c2cbce90b8ba299ad877d75186687b0d521f6d5d2",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_1_vid_1",
+          "relative_h5": "train/subj_1_vid_1.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "460cd8460bfdf470b37862fb1404dd75153799e80cb504f832e693fd5df47d85",
+          "effective_labels_sha256": "ea78ec18c941303d2a633d0997e07656e544f455c8c61051d1dc61cd4c94311d",
+          "effective_recording_sha256": "ecf4ef0e03dfa1b6efd17f626c72bf81fa880e9e0d074863742bac57d92b1819",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "fff9636ed8931d4f7a75d05c9c0cbbaecc5507d646a25e16a523fb67d9f8d10a",
+          "h5_size_bytes": 135503758,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "c8c0deaf2f4004d581c077571f9058efb58982386f72a80329d80a70d5482ead",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_1_vid_9",
+          "relative_h5": "train/subj_1_vid_9.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "64d95fc5410374949c66e2151b7830fedd23d302d40443d8f8b98de15b632593",
+          "effective_labels_sha256": "330a3ccec3624cf8ddcf8a7bcee4504dcb5a60cf19521ad0a16c3213e08e5aad",
+          "effective_recording_sha256": "dca911157bc39945e28e4dbdc655858d163f87bca57a811905b1d599e055c086",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "dbce7f9c2d5c5536e5f3acdf4bebdb91a44d60bfac802617f54757422d958be0",
+          "h5_size_bytes": 189256999,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "cd07528d0e2116b691a67464e080758a084671a0284af4cb6f10b918f4d8d3b8",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_21_vid_11",
+          "relative_h5": "train/subj_21_vid_11.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "086bff62b6e031d21ca9f06a3be8c14aecff304a8214b56ca9e4560fd44e4810",
+          "effective_labels_sha256": "f4c4e860e93ad885e3d806ba7b36c1645ddf8bdf2ac5a1c66101b5abb94f3e7f",
+          "effective_recording_sha256": "4114aeadcc17143e10e321b2ef8a3becd26b549682edb26e0d74c8078d974c16",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "631bab67104e8c8562f40044d72b486ae9d2586cf097cf50499d9fa305bbf8ac",
+          "h5_size_bytes": 121408902,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "80944f5cb0261463ad9f5a8b35f1ede11f5c79987e3f7020775a74915325722f",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_2_vid_4",
+          "relative_h5": "train/subj_2_vid_4.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "8ef2e5feebe23230eece5be08979e3ae6a8a0288cb24ebdae35bf52c82b86868",
+          "effective_labels_sha256": "50a1bd63d3effa0721cdc434e60041eea6f1aa000ebafd018f53d2f8733d3d8b",
+          "effective_recording_sha256": "53ace8a02f9d4c4bb1c9488f95bf31b708260f9487dae9b8dc41cb1ad71db2fe",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "6376563a377de82eb9e015bc2dfe7225b945f836ac09c16f8928dfa51c8bddac",
+          "h5_size_bytes": 159044904,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "3314bde405573154465b4e6d904c2bf353966b2d13361e592c0a5a2c88a9a420",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_6_vid_5",
+          "relative_h5": "train/subj_6_vid_5.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "758fdf9f1b3e45748c0315372dac6516f38908b65a98a30c96f20d2bf3980ffb",
+          "effective_labels_sha256": "4b24e3be9cc01843693b9de980ef1860a3c0a9be34f7f0f1fe9d8530906f778b",
+          "effective_recording_sha256": "5302b3ce5d2e85386e939c2758b5e534c692573d8607bc51a789abaa86cb2b1d",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "4e4c39b4177a76c6daba0cbe895ad235e90eb202c5ce8be4e3e7cac554ee6e30",
+          "h5_size_bytes": 136270041,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "fc4944d760934b361fc4ff433fad9436816e6a4b3a8f26f1b78218838078bc08",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_7_vid_18",
+          "relative_h5": "train/subj_7_vid_18.h5",
+          "sequence_windows": 461
+        },
+        {
+          "effective_frames_sha256": "0364238dd6165489ad174d3fd5df0bceadf11d88517b67f8d0097a5f6723a2d5",
+          "effective_labels_sha256": "adabaffdcf0c2190088b4bfe3e6bd42e47b28d3ca720362dd2c4b3a7a6ca0761",
+          "effective_recording_sha256": "69fa782bdbda4d3237f25d1a7d7f4a014e83e186edde623e29cdfda7452c012d",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            180,
+            240
+          ],
+          "h5_sha256": "d36fa75f68c1fe95eace90c96487769a65374f7d487dc11dac0f61d0b9a38605",
+          "h5_size_bytes": 175340922,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            461,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "f5a0a9e05034f1f7c81c726b52fa5963fa890e91baef657f7c1736aa5776bba8",
+          "overlap_boundaries_checked": 460,
+          "overlap_check": "all",
+          "partition": "train",
+          "reconstructed_frames": 500,
+          "recording_id": "subj_8_vid_2",
+          "relative_h5": "train/subj_8_vid_2.h5",
+          "sequence_windows": 461
+        }
+      ],
+      "recordings": 16,
+      "sequences": 7376,
+      "stride": 1
+    },
+    "validation": {
+      "dataset_order": "lexicographic_recording_id_then_window_start",
+      "effective_partition_sha256": "522ddc9306a99c2a4866b89f6f13ccc1936864e5bd4f552727af0d6fb682f9eb",
+      "partition": "val",
+      "recording_inputs": [
+        {
+          "effective_frames_sha256": "6c54eb0e60d48420b799d9b519daf1a667e433d14578a4af390dd3e67b853d29",
+          "effective_labels_sha256": "7f8a3320ebda5369df83d2591250f8a0cc9403755229c88d8a5f8059f9ad75f2",
+          "effective_recording_sha256": "c8d47bd0d36cf68f35e1698a114b0c8c15f32ca540a77b1fc13834c788d01735",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            136,
+            240
+          ],
+          "h5_sha256": "84a77af8fc03bc4bd59288d3bae1a2904290a48aea69b2231bbdf052e24b0798",
+          "h5_size_bytes": 2831062,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            12,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "c9859a1db776a2f97660ffca58e090d484db7b247f6dc7b4b5dbeda319c6dc1f",
+          "overlap_boundaries_checked": 0,
+          "overlap_check": "not_applicable",
+          "partition": "val",
+          "reconstructed_frames": 480,
+          "recording_id": "subj_16_vid_1",
+          "relative_h5": "val/subj_16_vid_1.h5",
+          "sequence_windows": 12
+        },
+        {
+          "effective_frames_sha256": "8b672c9b83eb10b283a386494a762c6b6383cd80f4e6ea85d3093e8ad23a2f1d",
+          "effective_labels_sha256": "bb73093de5112ba20afdff9db52dbe3036799f2da2322d19d0480c8e726dab65",
+          "effective_recording_sha256": "d064cb9fe825e08a1d0b7904037d928720796e98f6cc9bfe5990fe2c5e857ce8",
+          "h5_chunkshape": [
+            1,
+            1,
+            1,
+            136,
+            240
+          ],
+          "h5_sha256": "e3d2870ade35a0b46f6f4006ce981698bbbe1daf91b770818d20c7c48012aa43",
+          "h5_size_bytes": 5834868,
+          "h5_vector_dtype": "float64",
+          "h5_vector_shape": [
+            12,
+            40,
+            1,
+            180,
+            240
+          ],
+          "label_file_sha256": "02e4036e94ce8ac7e28f9967eef9136d241034e572ddfcd30dfefa9cbc825ec3",
+          "overlap_boundaries_checked": 0,
+          "overlap_check": "not_applicable",
+          "partition": "val",
+          "reconstructed_frames": 480,
+          "recording_id": "subj_18_vid_7",
+          "relative_h5": "val/subj_18_vid_7.h5",
+          "sequence_windows": 12
+        }
+      ],
+      "recordings": 2,
+      "sequences": 24,
+      "stride": 40
+    }
+  },
+  "input_inventory": {
+    "labels": {
+      "extra_txt_ids_ignored": [
+        "subj_10_vid_1",
+        "subj_10_vid_11",
+        "subj_11_vid_13",
+        "subj_11_vid_2",
+        "subj_11_vid_7",
+        "subj_14_vid_17",
+        "subj_14_vid_22",
+        "subj_15_vid_1",
+        "subj_15_vid_7",
+        "subj_16_vid_2",
+        "subj_17_vid_12",
+        "subj_17_vid_3",
+        "subj_17_vid_5",
+        "subj_18_vid_11",
+        "subj_19_vid_2",
+        "subj_19_vid_3",
+        "subj_19_vid_6",
+        "subj_20_vid_3",
+        "subj_20_vid_4",
+        "subj_20_vid_7",
+        "subj_21_vid_12",
+        "subj_21_vid_4",
+        "subj_22_vid_1",
+        "subj_22_vid_17",
+        "subj_22_vid_2",
+        "subj_2_vid_10",
+        "subj_2_vid_13",
+        "subj_3_vid_16",
+        "subj_3_vid_19",
+        "subj_3_vid_21",
+        "subj_4_vid_1",
+        "subj_4_vid_12",
+        "subj_4_vid_2",
+        "subj_5_vid_10",
+        "subj_5_vid_11",
+        "subj_5_vid_6",
+        "subj_6_vid_13",
+        "subj_7_vid_15",
+        "subj_7_vid_21",
+        "subj_8_vid_7",
+        "subj_8_vid_9",
+        "subj_9_vid_16",
+        "subj_9_vid_17",
+        "subj_9_vid_18"
+      ],
+      "official_ids": [
+        "subj_18_vid_2",
+        "subj_10_vid_8",
+        "subj_12_vid_1",
+        "subj_12_vid_2",
+        "subj_12_vid_9",
+        "subj_13_vid_1",
+        "subj_13_vid_2",
+        "subj_14_vid_10",
+        "subj_15_vid_2",
+        "subj_21_vid_11",
+        "subj_1_vid_1",
+        "subj_1_vid_9",
+        "subj_2_vid_4",
+        "subj_6_vid_5",
+        "subj_7_vid_18",
+        "subj_8_vid_2",
+        "subj_16_vid_1",
+        "subj_18_vid_7"
+      ]
+    },
+    "train": {
+      "extra_h5_ids_ignored": [
+        "subj_8_vid_7",
+        "subj_9_vid_16"
+      ],
+      "official_ids": [
+        "subj_18_vid_2",
+        "subj_10_vid_8",
+        "subj_12_vid_1",
+        "subj_12_vid_2",
+        "subj_12_vid_9",
+        "subj_13_vid_1",
+        "subj_13_vid_2",
+        "subj_14_vid_10",
+        "subj_15_vid_2",
+        "subj_21_vid_11",
+        "subj_1_vid_1",
+        "subj_1_vid_9",
+        "subj_2_vid_4",
+        "subj_6_vid_5",
+        "subj_7_vid_18",
+        "subj_8_vid_2"
+      ]
+    },
+    "val": {
+      "extra_h5_ids_ignored": [],
+      "official_ids": [
+        "subj_16_vid_1",
+        "subj_18_vid_7"
+      ]
+    }
+  },
+  "mode": "train",
+  "model": {
+    "model_id": "vanilla_convlstm_mymodel",
+    "parameters": 416882,
+    "scope": "vanilla ConvLSTM only; not a CB-ConvLSTM implementation"
+  },
+  "protocol": {
+    "checkpoint_rule": "minimum validation SmoothL1Loss; first epoch wins exact ties",
+    "chunk_size": 500,
+    "correct_metric": {
+      "definition": "Euclidean distance after x*80,y*60; pN is percent strictly < N px",
+      "metric_id": "euclidean_xy_80x60_px_strict_lt_v1"
+    },
+    "data_artifact_id": "SEET-eventframes-v0",
+    "frame_preprocessing": "cv2.resize(80x60), then per-frame standardisation",
+    "input_height": 60,
+    "input_width": 80,
+    "label_normalisation": {
+      "x_divisor": 640,
+      "y_divisor": 480
+    },
+    "label_sampling": "lines[3::4]",
+    "legacy_metric": {
+      "definition": "Historical swapped x*60,y*80 diagnostic only; pN uses <= N px",
+      "metric_id": "legacy_swapped_xy_60x80_px_v0"
+    },
+    "loss_function": "SmoothL1Loss(beta=1, reduction=mean)",
+    "official_training_config": {
+      "adam_betas": [
+        0.9,
+        0.999
+      ],
+      "adam_eps": 1e-08,
+      "batch_size": 16,
+      "deterministic_algorithms": true,
+      "epochs": 100,
+      "learning_rate": 0.001,
+      "overlap_check": "all",
+      "scheduler": null,
+      "seed": 1,
+      "weight_decay": 0.0
+    },
+    "optimizer": "Adam",
+    "protocol_id": "SEET-public-v1-convlstm-code-v1",
+    "sequence_length": 40,
+    "train_stride": 1,
+    "validation_stride": 40
+  },
+  "protocol_compliance": {
+    "compliant": true,
+    "mismatches": [],
+    "protocol_id": "SEET-public-v1-convlstm-code-v1",
+    "status": "single_seed_reference"
+  },
+  "recording_disjoint": true,
+  "run_config": {
+    "batch_size": 16,
+    "deterministic": true,
+    "device": "cuda",
+    "epochs": 100,
+    "include_legacy_swapped_metric": true,
+    "learning_rate": 0.001,
+    "num_workers": 0,
+    "overlap_check": "all",
+    "overlap_samples": 8,
+    "seed": 1
+  },
+  "schema_version": 1,
+  "software": {
+    "cuda_available": true,
+    "device": "cuda",
+    "mps_available": false,
+    "numpy": "1.25.1",
+    "opencv": "4.8.1",
+    "platform": "Linux-5.14.0-687.59.1.el9_8.x86_64-x86_64-with-glibc2.34",
+    "pytables": "3.9.2",
+    "python": "3.11.3",
+    "torch": "2.1.2"
+  },
+  "source": {
+    "source_commit": "f2e36e9abbc029d1bf292f7755783009ccca404f",
+    "source_dirty": false,
+    "source_file_sha256": {
+      "tools/run_seet_public_v1.py": "9b981ea009fd069a42c88adc0158a6c17e928e1400545eef9bb8b0efb1ce0b60",
+      "tools/seet_public_v1_model.py": "a2db79f936f73be9f17853984b0020bd1162e560ba6d9b997bae62f5f229fe00"
+    },
+    "source_status_porcelain": [],
+    "source_tree_fingerprint_sha256": "99c9383aede39e9de7c9ed18da04c8e9d4af7b23878a7a843f35efef8bf9f21e"
+  },
+  "split": {
+    "recording_overlap": [],
+    "split_id": "SEET-public-v1",
+    "train_ids": [
+      "subj_18_vid_2",
+      "subj_10_vid_8",
+      "subj_12_vid_1",
+      "subj_12_vid_2",
+      "subj_12_vid_9",
+      "subj_13_vid_1",
+      "subj_13_vid_2",
+      "subj_14_vid_10",
+      "subj_15_vid_2",
+      "subj_21_vid_11",
+      "subj_1_vid_1",
+      "subj_1_vid_9",
+      "subj_2_vid_4",
+      "subj_6_vid_5",
+      "subj_7_vid_18",
+      "subj_8_vid_2"
+    ],
+    "train_list_sha256": "d0a3e202fcd084f55bcd265aca0abfeadb33d90b8989af08fc47a27eb6aeaf50",
+    "train_recordings": 16,
+    "validation_ids": [
+      "subj_16_vid_1",
+      "subj_18_vid_7"
+    ],
+    "validation_list_sha256": "32a21bfb5105f89568ff266e3a0e9d6aa54fb5d5aa1b56775360ac76de4d400e",
+    "validation_recordings": 2
+  },
+  "training": {
+    "best_epoch": 83,
+    "best_validation_loss": 0.0002062037237919867,
+    "history_filename": "history.jsonl",
+    "last_checkpoint_filename": "checkpoint_last.pt",
+    "resume_lineage": null
+  },
+  "validation_metrics": {
+    "evaluated_points": 960,
+    "legacy_swapped_metric": {
+      "evaluated_points": 960,
+      "mean_error_px": 1.5721422195434571,
+      "metric_id": "legacy_swapped_xy_60x80_px_v0",
+      "p10_percent": 99.89583333333333,
+      "p3_percent": 90.10416666666667,
+      "p5_percent": 99.0625
+    },
+    "loss": 0.0002062037237919867,
+    "mean_error_px": 1.6302474975585937,
+    "metric_id": "euclidean_xy_80x60_px_strict_lt_v1",
+    "p10_percent": 99.6875,
+    "p3_percent": 87.5,
+    "p5_percent": 98.95833333333333
+  }
+}
